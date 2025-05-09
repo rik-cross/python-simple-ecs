@@ -1,0 +1,14 @@
+__pycache__
+__pycache__/*
+example/__pycache__
+example/__pycache__/*
+src/ecs/__pycache__
+src/ecs/example/__pycache__/*
+
+*.egg-info
+*.egg-info/*
+src/*.egg-info
+src/*.egg-info/*
+
+venv
+venv/*
