@@ -1,10 +1,10 @@
-# Python Simple ECS
+# Simple Python ECS
 #  -- By Rik Cross
 #  -- MIT licenced, free to use, modify and distribute
 
 import pygame
 import random
-import ecs
+import specs
 
 from TransformComponent import TransformComponent
 from SpriteComponent import SpriteComponent
@@ -20,14 +20,14 @@ pygame.display.set_caption('Pygame ECS Example 2')
 clock = pygame.time.Clock() 
 
 # create a scene, and add a size
-scene = ecs.Scene()
+scene = specs.Scene()
 scene.size = (680, 460)
 
 # create 500 entities with position and sprite components
 # containing random values, and add to the scene
 for _ in range(500):
     scene.addEntity(
-        ecs.Entity(
+        specs.Entity(
             TransformComponent(
                 position = (random.randint(10, 670), random.randint(10, 450)),
                 direction = (random.random() * 2 - 1, random.random() * 2 - 1),

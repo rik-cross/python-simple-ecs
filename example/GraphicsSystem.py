@@ -1,13 +1,13 @@
-# Python Simple ECS
+# Simple Python ECS
 #  -- By Rik Cross
 #  -- MIT licenced, free to use, modify and distribute
 
 import pygame
-import ecs
+import specs
 from TransformComponent import TransformComponent
 from SpriteComponent import SpriteComponent
 
-class GraphicsSystem(ecs.System):
+class GraphicsSystem(specs.System):
 
     '''
     The graphics system is responsible for drawing entities that

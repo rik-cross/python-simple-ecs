@@ -1,11 +1,11 @@
-# Python Simple ECS
+# Simple Python ECS
 #  -- By Rik Cross
 #  -- MIT licenced, free to use, modify and distribute
 
-import ecs
+import specs
 from TransformComponent import TransformComponent
 
-class PhysicsSystem(ecs.System):
+class PhysicsSystem(specs.System):
 
     '''
     The physics system updates the position of all entities

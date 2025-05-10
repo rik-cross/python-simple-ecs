@@ -1,9 +1,9 @@
-# Python Simple ECS
+# Simple Python ECS
 #  -- By Rik Cross
 #  -- MIT licenced, free to use, modify and distribute
 
 import pygame
-import ecs
+import specs
 
 from TransformComponent import TransformComponent
 from SpriteComponent import SpriteComponent
@@ -19,12 +19,12 @@ pygame.display.set_caption('Pygame ECS Example 1')
 clock = pygame.time.Clock() 
 
 # create a scene
-scene = ecs.Scene()
+scene = specs.Scene()
 scene.size = (680, 460)
 
 # create an entity with a position component
 # and add to the scene
-entity = ecs.Entity()
+entity = specs.Entity()
 entity.addComponent(TransformComponent(
     position = (50, 50),
     direction = (1, 1),

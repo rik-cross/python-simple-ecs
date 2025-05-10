@@ -1,4 +1,4 @@
-# Python Simple ECS
+# Simple Python ECS
 #  -- By Rik Cross
 #  -- MIT licenced, free to use, modify and distribute
 

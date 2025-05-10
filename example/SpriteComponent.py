@@ -1,10 +1,10 @@
-# Python Simple ECS
+# Simple Python ECS
 #  -- By Rik Cross
 #  -- MIT licenced, free to use, modify and distribute
 
-import ecs
+import specs
 
-class SpriteComponent(ecs.Component):
+class SpriteComponent(specs.Component):
 
     def __init__(self, color):
         self.color = color
