@@ -2,7 +2,7 @@
 #  -- By Rik Cross
 #  -- MIT licenced, free to use, modify and distribute
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __author__ = 'Rik Cross'
 __license__ = 'MIT'
 
