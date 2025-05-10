@@ -12,3 +12,6 @@ src/*.egg-info/*
 
 venv
 venv/*
+
+dist
+dist/*
